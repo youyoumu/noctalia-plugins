@@ -45,4 +45,4 @@ license = "MIT"
 icon = "play"
 description = "Launcher for running custom scripts. Type /run to activate."
 plugin_api = 22
-tags = ["launcher", "scripts"]
+tags = ["launcher", "utility"]

@@ -14,7 +14,7 @@ id = "service"
 entry = "service.entry.luau"
 
 [[widget]]
-id = "audio_output"
+id = "widget"
 entry = "widget.entry.luau"
 
 [[widget.setting]]

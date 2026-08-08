@@ -5,7 +5,7 @@ plugin_api = 22
 author = "youyoumu"
 license = "MIT"
 dependencies = []
-tags = ["launcher", "scripts"]
+tags = ["launcher", "utility"]
 icon = "play"
 description = "Launcher for running custom scripts. Type /run to activate."
 
