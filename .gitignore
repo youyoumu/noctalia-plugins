@@ -1,0 +1,5 @@
+/.github/workflows/__pycache__
+.luau_modules/*
+!.luau_modules/lune/
+!.luau_modules/noctalia/
+!.luau_modules/alien-signals/

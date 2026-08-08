@@ -1,0 +1,12 @@
+{
+  "languageMode": "nonstrict",
+  "lint": {
+    "FunctionUnused": false
+  },
+  "lintErrors": false,
+  "aliases": {
+    "lune": ".luau_modules/lune/.typedefs/0.10.4/",
+    "frktest": ".luau_modules/frktest/src/",
+    "root": "./"
+  }
+}

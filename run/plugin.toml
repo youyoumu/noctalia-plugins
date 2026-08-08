@@ -1,0 +1,17 @@
+id = "youyoumu/run"
+name = "Run"
+version = "1.0.0"
+plugin_api = 22
+author = "youyoumu"
+license = "MIT"
+dependencies = []
+tags = ["launcher", "scripts"]
+icon = "play"
+description = "Launcher for running custom scripts. Type /run to activate."
+
+[[launcher_provider]]
+id = "scripts"
+entry = "launcher.entry.luau"
+prefix = "run"
+glyph = "run"
+include_in_global_search = false

@@ -1,0 +1,50 @@
+PipeWire 'pipewire-0' [1.6.8, yym@chocola, cookie:4119387331]
+ └─ Clients:
+        34. pipewire                            [1.6.8, yym@chocola, pid:3096]
+        35. WirePlumber                         [1.6.8, yym@chocola, pid:3097]
+        49. WirePlumber [export]                [1.6.8, yym@chocola, pid:3097]
+        50. .xdg-desktop-portal-wrapped         [1.6.8, yym@chocola, pid:3210]
+        72. .noctalia-wrapped                   [1.6.8, yym@chocola, pid:3060]
+        73. .noctalia-wrapped                   [1.6.8, yym@chocola, pid:3060]
+        76. WEBRTC VoiceEngine                  [1.6.8, yym@chocola, pid:4323]
+        77. WEBRTC VoiceEngine                  [1.6.8, yym@chocola, pid:4323]
+        78. Chromium input                      [1.6.8, yym@chocola, pid:4413]
+        79. Microsoft Edge input                [1.6.8, yym@chocola, pid:30959]
+        80. wpctl                               [1.6.8, yym@chocola, pid:137541]
+
+Audio
+ ├─ Devices:
+ │      51. Navi 21/23 HDMI/DP Audio Controller [alsa]
+ │      52. SteelSeries Arctis 5                [alsa]
+ │      53. SPCA2281 Web Camera                 [alsa]
+ │      54. Starship/Matisse HD Audio Controller [alsa]
+ │
+ ├─ Sinks:
+ │  *   47. Starship/Matisse HD Audio Controller Digital Stereo (IEC958) [vol: 1.00]
+ │      61. SteelSeries Arctis 5 Game           [vol: 1.00]
+ │
+ ├─ Sources:
+ │  *   62. SteelSeries Arctis 5 Chat           [vol: 1.00]
+ │
+ ├─ Filters:
+ │
+ └─ Streams:
+
+Video
+ ├─ Devices:
+ │      37. USB Camera                          [v4l2]
+ │      48. USB Camera                          [v4l2]
+ │      65. USB Camera: USB Camera              [libcamera]
+ │
+ ├─ Sinks:
+ │
+ ├─ Sources:
+ │  *   74. USB Camera (V4L2)
+ │
+ ├─ Filters:
+ │
+ └─ Streams:
+
+Settings
+ └─ Default Configured Devices:
+         0. Audio/Sink    alsa_output.pci-0000_0b_00.4.iec958-stereo

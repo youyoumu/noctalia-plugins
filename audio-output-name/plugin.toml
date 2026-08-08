@@ -1,0 +1,24 @@
+id = "youyoumu/audio-output-name"
+name = "Audio Output Name"
+version = "1.0.0"
+plugin_api = 22
+author = "youyoumu"
+license = "MIT"
+dependencies = []
+tags = ["audio", "system"]
+icon = "bluetooth-device-speaker"
+description = "Bar widget that shows the current PipeWire audio output device name."
+
+[[service]]
+id = "service"
+entry = "service.entry.luau"
+
+[[widget]]
+id = "audio_output"
+entry = "widget.entry.luau"
+
+[[widget.setting]]
+key = "glyph"
+type = "glyph"
+label_key = "settings.glyph.label"
+default = "bluetooth-device-speaker"

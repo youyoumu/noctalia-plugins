@@ -1,0 +1,9 @@
+{
+  "no_device": "No audio",
+  "settings": {
+    "glyph": {
+      "label": "Bar Glyph"
+    }
+  },
+  "title": "Audio Output Name"
+}
