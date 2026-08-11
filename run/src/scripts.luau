@@ -4,6 +4,7 @@
 
 local M = {}
 
+-- TODO: use config file instead
 M.scripts = {
 	{
 		id = "screenshot-region",
@@ -11,7 +12,7 @@ M.scripts = {
 		subtitle = "Capture a selected region",
 		glyph = "crop",
 		category = "Screenshot",
-		command = "bash ~/dotfiles/script/screenshot.sh region",
+		command = "~/scripts/screenshot.lua region",
 	},
 	{
 		id = "screenshot-window",
@@ -19,7 +20,7 @@ M.scripts = {
 		subtitle = "Capture a specific window",
 		glyph = "app-window",
 		category = "Screenshot",
-		command = "bash ~/dotfiles/script/screenshot.sh window",
+		command = "~/scripts/screenshot.lua window",
 	},
 	{
 		id = "screenshot-screen",
@@ -27,7 +28,7 @@ M.scripts = {
 		subtitle = "Capture the current monitor",
 		glyph = "device-desktop",
 		category = "Screenshot",
-		command = "bash ~/dotfiles/script/screenshot.sh monitor",
+		command = "~/scripts/screenshot.lua monitor",
 	},
 	{
 		id = "screenshot-region-delay",
@@ -35,7 +36,7 @@ M.scripts = {
 		subtitle = "3 second delay, then select region",
 		glyph = "clock",
 		category = "Screenshot",
-		command = "bash ~/dotfiles/script/screenshot.sh region-delay",
+		command = "~/scripts/screenshot.lua region-delay",
 	},
 	{
 		id = "screenshot-region-delay-annotate",
@@ -43,7 +44,7 @@ M.scripts = {
 		subtitle = "Select region, annotate in Satty",
 		glyph = "pencil",
 		category = "Screenshot",
-		command = "bash ~/dotfiles/script/screenshot.sh region-delay-annotate",
+		command = "~/scripts/screenshot.lua region-delay-annotate",
 	},
 }
 
