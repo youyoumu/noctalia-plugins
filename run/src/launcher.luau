@@ -1,7 +1,7 @@
 --!nonstrict
 -- Launcher provider for the run plugin.
--- Reads scripts from src/scripts.luau, fuzzy-matches on query,
--- and runs the selected script via noctalia.runAsync.
+-- Loads scripts from the JSON file configured in plugin settings,
+-- fuzzy-matches on query, and runs the selected script via noctalia.runAsync.
 
 local scripts = require("./scripts.luau")
 

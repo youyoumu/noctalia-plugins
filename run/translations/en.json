@@ -1,4 +1,10 @@
 {
   "title": "Run",
-  "no_match": "No scripts found"
+  "no_match": "No scripts found",
+  "settings": {
+    "scripts_path": {
+      "label": "Scripts path",
+      "description": "Path to a JSON file describing the scripts shown by /run."
+    }
+  }
 }

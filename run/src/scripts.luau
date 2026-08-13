@@ -1,51 +1,24 @@
 --!nonstrict
--- Hardcoded script definitions for the run plugin.
--- Edit this table to add, remove, or modify scripts.
+-- Loads the run plugin's scripts from the JSON file configured in the plugin
+-- settings (noctalia.getConfig("scripts_path")). Edit that file to add, remove,
+-- or modify scripts.
 
 local M = {}
 
--- TODO: use config file instead
-M.scripts = {
-	{
-		id = "screenshot-region",
-		title = "Screenshot Region",
-		subtitle = "Capture a selected region",
-		glyph = "crop",
-		category = "Screenshot",
-		command = "~/scripts/screenshot.lua region",
-	},
-	{
-		id = "screenshot-window",
-		title = "Screenshot Window",
-		subtitle = "Capture a specific window",
-		glyph = "app-window",
-		category = "Screenshot",
-		command = "~/scripts/screenshot.lua window",
-	},
-	{
-		id = "screenshot-screen",
-		title = "Screenshot Screen",
-		subtitle = "Capture the current monitor",
-		glyph = "device-desktop",
-		category = "Screenshot",
-		command = "~/scripts/screenshot.lua monitor",
-	},
-	{
-		id = "screenshot-region-delay",
-		title = "Screenshot Region (Delay)",
-		subtitle = "3 second delay, then select region",
-		glyph = "clock",
-		category = "Screenshot",
-		command = "~/scripts/screenshot.lua region-delay",
-	},
-	{
-		id = "screenshot-region-delay-annotate",
-		title = "Screenshot Region (Annotate)",
-		subtitle = "Select region, annotate in Satty",
-		glyph = "pencil",
-		category = "Screenshot",
-		command = "~/scripts/screenshot.lua region-delay-annotate",
-	},
-}
+local path = noctalia.getConfig("scripts_path") or "scripts.json"
+
+local contents, readErr = noctalia.readFile(path)
+if contents then
+	local decoded, decodeErr = noctalia.json.decode(contents)
+	if type(decoded) == "table" then
+		M.scripts = decoded
+	else
+		noctalia.log(`run: failed to parse {path}: {decodeErr}`)
+		M.scripts = {}
+	end
+else
+	noctalia.log(`run: failed to read {path}: {readErr}`)
+	M.scripts = {}
+end
 
 return M

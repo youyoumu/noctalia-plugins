@@ -6,8 +6,16 @@ author = "youyoumu"
 license = "MIT"
 dependencies = []
 tags = ["launcher", "utility"]
-icon = "play"
+icon = "run"
 description = "Launcher for running custom scripts. Type /run to activate."
+
+[[setting]]
+key = "scripts_path"
+type = "file"
+label_key = "settings.scripts_path.label"
+description_key = "settings.scripts_path.description"
+extensions = [".json"]
+default = "scripts.json"
 
 [[launcher_provider]]
 id = "scripts"
